@@ -9,18 +9,6 @@ A clean, calm weather interface built around frosted glass cards, a living CSS s
 - **24-Hour Scrollable Strip & Time-of-Day Breakdown**: Hourly temperature sparkline, precipitation probability bars, and Morning/Afternoon/Evening/Night toggles (`Temp`, `Wind`, `Rain`).
 - **Smart Persistence & Caching**: 10-minute in-memory TTL cache with in-flight request deduplication, schema-versioned `localStorage` for saved cities and `°C`/`°F` unit preferences, and offline fallback.
 
-## Setup & API Key
-1. Copy `.env.example` to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-2. Add your OpenWeather API key to `.env`:
-   ```bash
-   VITE_OPENWEATHER_API_KEY="your_openweather_api_key"
-   ```
-   When `VITE_OPENWEATHER_API_KEY` is set, Weatherly calls `/data/2.5/weather`, `/data/2.5/forecast`, `/data/2.5/air_pollution`, `/data/3.0/onecall` (for UV index), and `/geo/1.0/direct` behind `src/services/weatherService.ts`.
-   When omitted, Weatherly automatically uses Open-Meteo as a zero-key live fallback so the dashboard works out of the box.
-
 ## Scripts
 - `npm run dev` — Start the Vite development server on port 3000.
 - `npm run build` — Build production static assets.
