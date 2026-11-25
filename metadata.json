@@ -1,0 +1,6 @@
+{
+  "name": "Weatherly",
+  "description": "A clean, calm weather interface built around frosted glass cards, atmospheric metrics, and a living sky backdrop.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": []
+}
